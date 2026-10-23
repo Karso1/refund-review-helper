@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "退款管理列表初审",
+  "version": "1.3.0",
+  "description": "自动翻页逐条初审并同意，报错跳过，支持停止及导出日志。",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://example.com/*"
+      ],
+      "js": [
+        "helper.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
